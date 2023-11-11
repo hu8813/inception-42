@@ -13,7 +13,7 @@ up: create-volumes update-hosts
 	docker-compose -f $(COMPOSE_FILE) up --build -d
 
 down:
-	docker-compose -f $(COMPOSE_FILE) down
+	@docker-compose -f $(DOCKER_COMPOSE_FILE) down --remove-orphans
 
 stop:
 	docker-compose -f $(COMPOSE_FILE) stop
@@ -22,12 +22,12 @@ logs:
 	docker-compose -f $(COMPOSE_FILE) logs
 
 clean: down
-	docker container prune --force
+	@docker container prune --filter "label=com.docker.compose.project=srcs" --force
 
 fclean: clean
 	sudo rm -rf $(DB_VOLUME) $(WP_VOLUME)
-	docker system prune --all --force
-	docker volume rm $(DB_DOCKER_VOLUME) $(WP_DOCKER_VOLUME)
+	docker system prune --all --volumes --force --filter "label=com.docker.compose.project=srcs"
+	docker volume rm $(DB_DOCKER_VOLUME) $(WP_DOCKER_VOLUME) -v --force
 
 re: fclean all
 
