@@ -18,7 +18,7 @@ COPY ./tools/script.sh /usr/local/bin/
 
 EXPOSE 3306
 
-ENTRYPOINT ["script.sh"]
+ENTRYPOINT ["/usr/local/bin/script.sh"]
 
 # Command launched at the end of the setup
 CMD ["/usr/bin/mysqld_safe", "--datadir=/var/lib/mysql"]

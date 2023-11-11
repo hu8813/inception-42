@@ -1,9 +1,9 @@
 USERNAME ?= huaydin
 COMPOSE_FILE = srcs/docker-compose.yml
-DB_VOLUME = ${HOME}/data/mariadb
-WP_VOLUME = ${HOME}/data/wordpress
 DB_DOCKER_VOLUME = mariadb
 WP_DOCKER_VOLUME = wordpress
+DB_VOLUME = ${HOME}/data/${DB_DOCKER_VOLUME}
+WP_VOLUME = ${HOME}/data/${WP_DOCKER_VOLUME}
 
 .PHONY: all up down stop logs clean fclean re create-volumes update-hosts
 
@@ -13,7 +13,7 @@ up: create-volumes update-hosts
 	docker-compose -f $(COMPOSE_FILE) up --build -d
 
 down:
-	@docker-compose -f $(DOCKER_COMPOSE_FILE) down --remove-orphans
+	@docker-compose -f $(COMPOSE_FILE) down --remove-orphans
 
 stop:
 	docker-compose -f $(COMPOSE_FILE) stop
@@ -22,12 +22,12 @@ logs:
 	docker-compose -f $(COMPOSE_FILE) logs
 
 clean: down
-	@docker container prune --filter "label=com.docker.compose.project=srcs" --force
+	@docker container prune --force
 
 fclean: clean
 	sudo rm -rf $(DB_VOLUME) $(WP_VOLUME)
-	docker system prune --all --volumes --force --filter "label=com.docker.compose.project=srcs"
-	docker volume rm $(DB_DOCKER_VOLUME) $(WP_DOCKER_VOLUME) -v --force
+	docker volume rm srcs_$(DB_DOCKER_VOLUME) srcs_$(WP_DOCKER_VOLUME) --force
+	docker image rm srcs_$(DB_DOCKER_VOLUME) debian:bookworm-slim srcs_$(WP_DOCKER_VOLUME) srcs_nginx --force
 
 re: fclean all
 
