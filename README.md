@@ -2,7 +2,7 @@
 
 ## Usage
 
-### Option 1: GitHub Codespaces
+### Option 1: GitHub Codespace
 
 GitHub Codespaces provides a convenient way to work with code in the cloud. If you're new to Codespaces, follow these steps to get started:
 
