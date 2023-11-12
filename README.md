@@ -12,7 +12,7 @@ GitHub Codespaces provides a convenient way to work with code in the cloud. If y
 
 3. Follow the on-screen prompts to create a new Codespace for this repository.
 
-4. Once the Codespace is ready, you can run make and the Docker containers will be created
+4. Once the Codespace is ready, you can run ```make``` command where the Makefile is and the Docker containers will be created
 
 5. Unfortunately you need to use curl to open the webpage if the clicking on the link (port 443) did not work. Or you can try 2nd option with Virtual Machine below.
 
