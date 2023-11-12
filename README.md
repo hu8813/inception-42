@@ -27,11 +27,15 @@ If you prefer to work with a virtual machine, you can download a ready-to-run De
 
 1. Download the Debian or any other Linux virtual machine image from [LinuxVMImages]([https://www.linuxvmimages.com/](https://www.linuxvmimages.com/images/debian-12/)).
 
-2. You just need to click on the .vbox file to run the VM
+2. You can either install a gui version for convenience which uses more space. Or non-gui version. I first downloaded non-gui version then installed gnome desktop via command: ```sudo apt install gnome-core```  so that it only had necessary software instad of a lot of programs.
 
-3. If you get an Error regarding Audio (WAS) then open the .vbox file in Text editor and Remove the line where Audio driver and "WAS" is written
+3. You just need to click on the .vbox file to run the VM
 
-4. If there is an Error regarding USB 2.0, then edit the Settings of the VM in Virtual Box, in the settings USB, just disable USB 2.0
+4. If you get an Error regarding Audio (WAS) then open the .vbox file in Text editor and Remove the line where Audio driver and "WAS" is written
+
+5. If there is an Error regarding USB 2.0, then edit the Settings of the VM in Virtual Box, in the settings USB, just disable USB 2.0
+
+6. After starting VM, just clone the repository and run ```make```
 
 ### .env File
 
