@@ -25,9 +25,9 @@ GitHub Codespaces provides a convenient way to work with code in the cloud. If y
 
 ### Option 2: Virtual Machine
 
-If you prefer to work with a virtual machine, you can download a ready-to-run Debian virtual machine image from [LinuxVMImages](https://www.linuxvmimages.com/). Here are the steps to set up the virtual machine:
+If you prefer to work with a virtual machine, you can download a ready-to-run Debian virtual machine image from LinuxVMImages which means you don't need to create partitions or setup anything. Here are the steps to set up the virtual machine:
 
-1. Download the Debian virtual machine image from [LinuxVMImages](https://www.linuxvmimages.com/).
+1. Download the Debian or any other Linux virtual machine image from [LinuxVMImages]([https://www.linuxvmimages.com/](https://www.linuxvmimages.com/images/debian-12/)).
 
 2. You just need to click on the .vbox file to run the VM
 
