@@ -20,6 +20,7 @@ GitHub Codespaces provides a convenient way to work with code in the cloud. If y
 
 ```curl http://codespace.42.fr``` -> will give error, as only port 443 and not 80 is set according to subject
 
+If curl is not already installed, run ```sudo apt install curl```
 
 ### Option 2: Virtual Machine
 
