@@ -6,8 +6,6 @@ COPY	./conf/nginx.conf	/etc/nginx/conf.d
 
 COPY ./tools/script.sh /usr/local/bin/
 
-EXPOSE 3306
-
 ENTRYPOINT ["/usr/local/bin/script.sh"]
 
 EXPOSE	443
