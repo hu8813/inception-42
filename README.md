@@ -1,4 +1,4 @@
-# Inception-42 a Project to learn Docker & Docker compose
+# Inception: a 42 Project to learn Docker
 
 ## Usage
 
