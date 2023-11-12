@@ -2,6 +2,8 @@
 
 Welcome. Inspect the code and resources for the Inception-42 project.
 
+Do not push any .env file to Vogsphere or put any passwords in other files. The .env file here is just for testing purposes and are random/fake passwords.
+
 ## Usage
 
 ### Option 1: GitHub Codespaces
