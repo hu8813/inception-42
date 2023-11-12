@@ -1,8 +1,4 @@
-# Inception-42 Repository
-
-Welcome. Inspect the code and resources for the Inception-42 project.
-
-Do not push any .env file to Vogsphere or put any passwords in other files. The .env file here is just for testing purposes and are random/fake passwords.
+# Inception-42 a Project to learn Docker & Docker compose
 
 ## Usage
 
@@ -36,3 +32,9 @@ If you prefer to work with a virtual machine, you can download a ready-to-run De
 3. If you get an Error regarding Audio (WAS) then open the .vbox file in Text editor and Remove the line where Audio driver and "WAS" is written
 
 4. If there is an Error regarding USB 2.0, then edit the Settings of the VM in Virtual Box, in the settings USB, just disable USB 2.0
+
+### .env File
+
+Do not push any .env file to Vogsphere or put any passwords in other configuration files. The .env file here is just for testing purposes and are random/fake passwords.
+
+
