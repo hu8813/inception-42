@@ -18,9 +18,9 @@ GitHub Codespaces provides a convenient way to work with code in the cloud. If y
 
 5. Unfortunately you need to use curl to open the webpage if the clicking on the link (port 443) did not work. Or you can try 2nd option with Virtual Machine below.
 
-’’’curl -k https://codespace.42.fr’’’  ->  to open the webpage and skipping the certificate is private warning
+'''curl -k https://codespace.42.fr'''  ->  to open the webpage and skipping the certificate is private warning
 
-’’’curl http://codespace.42.fr’’’ -> will give error, as only port 443 and not 80 is set according to subject
+'''curl http://codespace.42.fr''' -> will give error, as only port 443 and not 80 is set according to subject
 
 
 ### Option 2: Virtual Machine
