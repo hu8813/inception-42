@@ -28,7 +28,7 @@ If you prefer to work with a virtual machine, you can download a ready-to-run De
 
 1. Download the Debian or any other Linux virtual machine image from [LinuxVMImages](https://www.linuxvmimages.com/images/debian-12/).
 
-2. You can either install a gui version for convenience which uses more space. Or non-gui version. I first downloaded non-gui version then installed gnome desktop via command: ```sudo apt install gnome-core```  so that it only had necessary software instad of a lot of programs.
+2. You can either install a gui version for convenience which uses more space. Or non-gui version. I first downloaded non-gui version then installed gnome desktop via command: ```sudo apt install gnome-core```  so that it only had necessary software instead of a lot of programs.
 
 3. You just need to click on the .vbox file to run the VM
 
