@@ -26,7 +26,7 @@ If curl is not already installed, run ```sudo apt install curl```
 
 If you prefer to work with a virtual machine, you can download a ready-to-run Debian virtual machine image from LinuxVMImages which means you don't need to create partitions or setup anything. Here are the steps to set up the virtual machine:
 
-1. Download the Debian or any other Linux virtual machine image from [LinuxVMImages]([https://www.linuxvmimages.com/](https://www.linuxvmimages.com/images/debian-12/)).
+1. Download the Debian or any other Linux virtual machine image from [LinuxVMImages](https://www.linuxvmimages.com/](https://www.linuxvmimages.com/images/debian-12/).
 
 2. You can either install a gui version for convenience which uses more space. Or non-gui version. I first downloaded non-gui version then installed gnome desktop via command: ```sudo apt install gnome-core```  so that it only had necessary software instad of a lot of programs.
 
